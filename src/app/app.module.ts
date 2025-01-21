@@ -1,8 +1,8 @@
 import { Module } from "@nestjs/common";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
-import { ManualConceptsModule } from "./manual-concepts/manual-concepts.module";
-import { AutomaticConceptsModule } from "./automatic-concepts/automatic-concepts.module";
+import { ManualConceptsModule } from "../manual-concepts/manual-concepts.module";
+import { AutomaticConceptsModule } from "../automatic-concepts/automatic-concepts.module";
 
 // Modules are used to encapsulate things and to organize code
 
