@@ -1,0 +1,9 @@
+@baseURL = http://localhost:3000
+
+### AppControllerGetHome
+# @name AppControllerGetHome
+GET {{baseURL}}/home
+
+### AppControllerGetHello
+# @name AppControllerGetHello
+GET {{baseURL}}/home/hello

@@ -1,11 +1,16 @@
 import { Controller, Get } from "@nestjs/common";
 import { AppService } from "./app.service";
 
-@Controller()
+@Controller("home") // this is the root. URL should be http://localhost:3000/home
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
+  @Get() // empty means "/" and it will use home described on controller
+  getHome(): string {
+    return "This is the home page";
+  }
+
+  @Get("hello") // now URL should be http://localhost:3000/home/hello
   getHello(): string {
     return this.appService.getHello();
   }
